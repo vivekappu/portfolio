@@ -1,0 +1,174 @@
+/*global style*/
+*{
+    box-sizing: border-box;
+}
+/*body */
+body{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    background-color: gray;
+}
+
+/* navigation styles */
+
+.nav{
+    width:100%;
+    margin:0px;
+    padding:10px;
+    background-color: black;
+}
+.nav ul{
+    display:flex;
+    font-size:1.2rem;
+}
+.nav li{
+   list-style-type: none;
+   padding:0 5px 0 5px;
+}
+.nav .name{
+    margin-right:auto;
+}
+/*nav link styles*/
+.nav a{
+    text-decoration: none;
+    color:rgb(185, 172, 172);
+}
+.nav li a:hover{
+    color:white;
+}
+/* heading */
+h1{
+    text-align:center;
+}
+.container{
+    border:2px solid white;
+    clear:both;
+    
+}
+/* aboutme */
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    display:block;
+    margin:0 auto;
+}
+/*profile animation */
+header .profile-pic:hover {
+    transform: scale(1.2) rotate(180deg);
+  }
+header .tag{
+    background-color:white;
+    display:table;
+    padding:20px;
+    margin:0 auto;
+    border:2px solid black;
+    border-radius:5%;
+}
+header .name{
+ background:green;
+ color:white;
+}
+header .location{
+ background-color:blue;
+ color:pink;
+}
+header{
+    background: url(IMG_20200612_090841_8.jpg) no-repeat top center;
+    background-size: cover;
+    min-height:400px;
+    
+}
+
+/* main section */
+.aboutme .heading {
+    display:block;
+    font-size:1.8rem;
+    color:rgb(14, 7, 7);
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.card{
+    margin:20px;
+    max-width:500px;
+    text-align:justify;
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:10px;
+    border-bottom:3px solid black;
+}
+h2{
+    text-align: center;
+}
+/*card styles*/
+/*skills*/
+.skills{
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style-type:none;
+    
+}
+.my-skills{
+    border-bottom: 3px solid yellow;
+}
+ .skills li {
+     background-color: yellow;
+    display:inline-block;
+    color:black;
+    padding:5px;
+    margin-top:10px;
+    border:1px solid gray;
+    border-radius:10px;
+    
+} 
+/* interests*/
+.hobbies{
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style-type:none;
+    
+}
+
+.my-interests{
+    border-bottom: 3px solid rgb(255, 0, 128);
+}
+.hobbies li{
+    background-color: rgb(255, 0, 128);
+    display:inline-block;
+    color:black;
+    padding:5px;
+    margin-top:10px;
+    border:1px solid black;
+    border-radius:10px;
+}
+/*for larger screens*/
+@media screen and (min-width: 720px) {
+  
+    .flex {
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex; 
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  
+  
