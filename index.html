@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIVEK T V|Web developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
    <nav class="nav">
     <ul>
-        <li class="name"><a href="about.html">VIVEK T V</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="name"><a href="#about">VIVEK T V</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
  
    </nav>
@@ -24,7 +25,7 @@
     <h1 class="tag name">Hello,I'm Vivek</h1>
     <p class="tag location">I'm from palakkad,kerala</p>
    </header>
-   <section class="aboutme">
+   <section class="aboutme" id="about">
     <h1 class="heading">About me</h1>
     <div class="flex">
     <div class="background card">
@@ -54,13 +55,13 @@
       <h2>My Interests</h2>
       <p>When i'm not coding I'd love to do some of these things:</p>
       <ul class="hobbies">
-        <li>Reading books</li>
-        <li>Gaming</li>
-        <li>movies</li>
-        <li>music</li>
+        <li><i class="fa fa-book fa-2x " aria-hidden="true"></i> Reading books</li>
+        <li><i class="fa fa-2x fa-gamepad "></i> Gaming</li>
+        <li><i class="fa fa-film fa-2x " aria-hidden="true"></i> movies</li>
+        <li><i class="fa fa-music fa-2x" aria-hidden="true"></i> music</li>
         <li>cricket</li>
-        <li>chess</li>
-        <li>youtube</li>
+        <li> chess</li>
+        <li><i class="fa fa-youtube fa-2x"> </i> youtube</li>
       </ul>
     </div>
     </div>
@@ -70,9 +71,14 @@
    </section>
    
    </main>
-   <footer>
-
-   </footer>
    </div>
+   <footer id="contact">
+    <ul>
+      <li><a href="#" class="social twitter"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> email</a></li>
+      <li><a href="#" class="social linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> LinkedIn</a></li>
+      <li><a href="#" class="social github"><i class="fa fa-github fa-2x" aria-hidden="true"></i> Github</a></li>
+    </ul>
+    <p class="copyright">Copyright 2020, VIVEK T V</p>
+  </footer>
 </body>
 </html>

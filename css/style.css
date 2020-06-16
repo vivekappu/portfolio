@@ -15,9 +15,11 @@ body{
 
 .nav{
     width:100%;
-    margin:0px;
+    margin:0 ;
+    min-height:30px;
     padding:10px;
     background-color: black;
+    position:fixed;
 }
 .nav ul{
     display:flex;
@@ -29,6 +31,8 @@ body{
 }
 .nav .name{
     margin-right:auto;
+    padding:0;
+    margin-left:-20px;
 }
 /*nav link styles*/
 .nav a{
@@ -56,9 +60,16 @@ h1{
     margin:0 auto;
 }
 /*profile animation */
+/*
 header .profile-pic:hover {
     transform: scale(1.2) rotate(180deg);
   }
+*/
+
+/*header*/
+header{
+    padding-top:100px;
+}
 header .tag{
     background-color:white;
     display:table;
@@ -135,7 +146,11 @@ h2{
     list-style-type:none;
     
 }
+/*font-awesome icons*/
+.hobbies i{
+    color:whitesmoke;
 
+}
 .my-interests{
     border-bottom: 3px solid rgb(255, 0, 128);
 }
@@ -147,6 +162,31 @@ h2{
     margin-top:10px;
     border:1px solid black;
     border-radius:10px;
+}
+/*footer*/
+footer{
+    margin:0;
+    padding:0;
+    width:100%;
+    border:2px solid black;
+    background-color: black;
+   
+}
+footer li{
+    list-style: none;
+    display:inline-block;
+    text-decoration: none;
+}
+footer li a{
+    text-decoration: none;
+    color:gray;
+    margin-left:10px;
+}
+footer li i{
+    color:rgb(248, 198, 207);
+}
+footer p{
+    color:white;
 }
 /*for larger screens*/
 @media screen and (min-width: 720px) {
@@ -162,13 +202,9 @@ h2{
     main p {
       line-height: 1.6em;
     }
-  
-    footer {
-      font-size: 1.3em;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
-  
+   footer{
+     font-size:1rem;
+   }
+   
   }
-  
   
