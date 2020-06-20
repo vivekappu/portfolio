@@ -8,7 +8,8 @@ body{
     padding:0;
     text-align: center;
     font-family: 'Metal Mania', cursive;
-    background-color: gray;
+    background-color: #277553;
+    
 }
 
 /* navigation styles */
@@ -69,6 +70,8 @@ header .profile-pic:hover {
 /*header*/
 header{
     padding-top:100px;
+    font-family: 'Inconsolata', monospace;
+    background: url('../IMG_20200612_090841_8.jpg');
 }
 header .tag{
     background-color:white;
@@ -79,12 +82,12 @@ header .tag{
     border-radius:5%;
 }
 header .name{
- background:green;
+ background:#A13646;
  color:white;
 }
 header .location{
- background-color:blue;
- color:pink;
+ background-color:rgb(32, 32, 148);/*#7CBB92;*/
+ color:whitesmoke;
 }
 header{
     background: url(IMG_20200612_090841_8.jpg) no-repeat top center;
@@ -94,13 +97,13 @@ header{
 }
 
 /* main section */
-.aboutme .heading {
-    display:block;
-    font-size:1.8rem;
-    color:rgb(14, 7, 7);
+.aboutme .section-heading {
+    display:inline-block;
+    font-size:2rem;
+    color:white;
     font-weight: bold;
     font-family:'Times New Roman', Times, serif;
-    text-transform: uppercase;
+    text-transform: uppercase;  
 }
 .card{
     margin:20px;
@@ -111,7 +114,7 @@ header{
     border-radius:10px;
     border-bottom:3px solid black;
 }
-h2{
+.sub-heading{
     text-align: center;
 }
 /*card styles*/
@@ -170,7 +173,7 @@ footer{
     width:100%;
     border:2px solid black;
     background-color: black;
-   
+    clear: both;
 }
 footer li{
     list-style: none;
@@ -203,8 +206,74 @@ footer p{
       line-height: 1.6em;
     }
    footer{
+     clear:both;
      font-size:1rem;
    }
    
   }
   
+/* contact form */
+/*bacground*/
+.contact{
+    background-color:teal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form{
+    width:800px;    
+}
+.contact .section-heading {
+    display:inline-block;
+    font-size:2rem;
+    color:white;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;  
+}
+aside{
+    margin:0 auto;
+    margin-right:30px;
+
+}
+
+fieldset{
+    border:none;
+    
+}
+legend{
+font-size: 2rem;
+color:black;
+font-weight: bold;
+text-align: center;
+display:block;
+
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top:0;
+}
+label{
+    font-size:1.5rem;
+    display:block;
+    line-height:2rem;
+}
+input{
+    width:300px;
+    padding:5px;
+    margin:5px;
+}
+input::placeholder,textarea::placeholder{
+    font-size:1rem;
+}
+textarea{
+    width:300px;
+}
+button{
+    display:block;
+    text-align:center;
+    margin:4px;
+    padding:9px;
+    background-color:green;
+    color:white;
+    border-radius:10px;
+}
