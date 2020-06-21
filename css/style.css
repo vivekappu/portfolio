@@ -30,10 +30,14 @@ body{
    list-style-type: none;
    padding:0 5px 0 5px;
 }
-.nav .name{
+.nav .name {
     margin-right:auto;
     padding:0;
     margin-left:-20px;
+   
+}
+.nav .name a{
+    color:white;
 }
 /*nav link styles*/
 .nav a{
@@ -217,9 +221,12 @@ footer p{
 .contact{
     background-color:teal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
-form{
-    width:800px;    
+
+.contact .card{
+    border:2px solid black;
+    width:90%;
 }
 .contact .section-heading {
     display:inline-block;
@@ -258,7 +265,7 @@ label{
     line-height:2rem;
 }
 input{
-    width:300px;
+    width:90%;
     padding:6px;
     margin:5px;
 }
@@ -266,7 +273,7 @@ input::placeholder,textarea::placeholder{
     font-size:1rem;
 }
 textarea{
-    width:300px;
+    width:90%;
 }
 button{
     display:block;
@@ -276,4 +283,7 @@ button{
     background-color:green;
     color:white;
     border-radius:10px;
+}
+iframe{
+    width:90%;
 }
