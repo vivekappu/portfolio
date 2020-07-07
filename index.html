@@ -12,18 +12,23 @@
 <body>
    <nav class="nav">
     <ul>
-        <li class="name"><a href="#about">VIVEK T V</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="name"><a >VIVEK T V</a></li>
+        <li><a href="#about" >About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" >Contact</a></li>
+
     </ul>
  
    </nav>
    <main>
-   <header >
-    <img class="profile-pic" src="vivek.jpg" alt="picture of vivek">
-    <h1 class="tag name">Hello,I'm Vivek</h1>
-    <p class="tag location">I'm from palakkad,kerala</p>
+   <header ">
+    <img class="profile-pic " src="images/vivek.jpg" alt="picture of vivek">
+       <div class="tag name typewriter">
+           <h1 >Hello,I'm Vivek</h1>
+       </div>
+       <div class="tag location typewriter">
+           <p >I'm from palakkad,kerala</p>
+       </div>
    </header>
    <section class="aboutme" id="about">
     <h1 class="section-heading">About me</h1>
@@ -66,12 +71,53 @@
     </div>
     </div>
    </section>
-   <section id="contact" class="contact">
+     <!---------------projects section------------------------>
+       <section id="projects" class="projects ">
+           <h1 class="section-heading">My projects</h1>
+           <!-- Portfolio Gallery Grid -->
+           <!-- row1-->
+           <div class="row">
+               <div class="column">
+                   <div class="content">
+                      <a href="https://my-to-do-app-v1.herokuapp.com/" target="_blank"><img src="images/Todo-app.png" alt="a todo-app" style="width:100%"></a>
+                       <h3>To-do App </h3>
+
+                       <p>A to-do app using nodejs,mongodb.User's can add task,mark it as complete & delete the task </p>
+                   </div>
+               </div>
+               <div class="column">
+                   <div class="content">
+                       <a href="https://my-library-app-v2.herokuapp.com/books" target="_blank"><img src="./images/librarywebsite.png" alt="library website" style="width:100%"></a>
+                       <h3>A library website</h3>
+                       <p>A Library website using nodejs,mongodb with features like adding,editing,deleting book's and author's info </p>
+                   </div>
+               </div>
+           </div>
+           <!--row 2-->
+           <div class="row">
+               <div class="column">
+                   <div class="content">
+                       <a href="https://vivekappu.github.io/mycalculator/ " target="_blank"><img src="images/mycalculator.png" alt="calculator using html,css,javascript" style="width:100%"></a>
+                       <h3>Calculator</h3>
+                       <p>A calculator app using html,css and javascript</p>
+                   </div>
+               </div>
+               <div class="column">
+                   <div class="content">
+                       <a href="https://vivekappu.github.io/kerala_tourism_website/" target="_blank"><img src="./images/kerala_tourism.png" alt="A tourism website" style="width:100%"></a>
+                       <h3>Kerala tourism website</h3>
+                       <p>A Tourism website using html,css(bootstrap) </p>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-------------contact section-------------------------->
+   <section id="contact" class="contact ">
     <h2 class="section-heading">Contact</h2>
    <div class="flex"> 
-   <form class="card">
+   <form id="form" class="card"  >
     <fieldset>
-    <legend class="sub-heading">contact me</legend>
+    <legend class="sub-heading">Contact me</legend>
     <label for="name">Your name</label>
     <input type="text" name="name" id="name" placeholder="name">
     <label for="phone">Phone number</label>
@@ -83,7 +129,7 @@
     <button type="submit">Send message</button>
   </fieldset>
   </form>
-  <aside class="card">
+  <aside class="card ">
     <h3 class="sub-heading">My location</h3>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62708.83217764183!2d76.61888765501494!3d10.788165132194004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86dfa087d31ad%3A0xf542d6eb7a870a56!2sPalakkad%2C%20Kerala!5e0!3m2!1sen!2sin!4v1592671299516!5m2!1sen!2sin"
@@ -103,5 +149,6 @@
     </ul>
     <p class="copyright">Copyright 2020, VIVEK T V</p>
   </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>

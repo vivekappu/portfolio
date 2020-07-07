@@ -21,6 +21,7 @@ body{
     padding:10px;
     background-color: black;
     position:fixed;
+    z-index: 9999;
 }
 .nav ul{
     display:flex;
@@ -65,17 +66,44 @@ h1{
     margin:0 auto;
 }
 /*profile animation */
-/*
-header .profile-pic:hover {
-    transform: scale(1.2) rotate(180deg);
-  }
-*/
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 3s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 1.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+    animation-delay: 3s;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+/*-----animation end-----------*/
 /*header*/
 header{
     padding-top:100px;
     font-family: 'Inconsolata', monospace;
-    background: url('../IMG_20200612_090841_8.jpg');
+
 }
 header .tag{
     background-color:white;
@@ -94,7 +122,7 @@ header .location{
  color:whitesmoke;
 }
 header{
-    background: url(IMG_20200612_090841_8.jpg) no-repeat top center;
+
     background-size: cover;
     min-height:400px;
     
@@ -286,4 +314,76 @@ button{
 }
 iframe{
     width:90%;
+}
+/*projects section*/
+.projects {
+    background-color:cornflowerblue;
+}
+.projects{
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects .section-heading{
+    display:inline-block;
+    font-size:2rem;
+    color:white;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.projects img{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.projects img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+.row {
+    margin: 8px ;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+/*color*/
+.white{
+    color:white !important;
 }
