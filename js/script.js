@@ -4,9 +4,16 @@ const nameInput=document.getElementById("name");
 const emailInput=document.getElementById("email");
 const phoneInput=document.getElementById("phone");
 const messageInput=document.getElementById("message");
+function show(id){
+    document.getElementById(id).classList.remove('hide');
+}
+function hide(id){
+    document.getElementById(id).classList.add('hide');
+}
 form.addEventListener("submit",(e)=>{
-    console.log("submitting..")
     e.preventDefault();
+    show('sending-animation');
+
     const name=nameInput.value.trim();
     const email=emailInput.value.trim();
     const phone=phoneInput.value.trim();
@@ -28,7 +35,9 @@ form.addEventListener("submit",(e)=>{
     })
         .then(response => response.json())
         .then(data => {
-            alert(data.message);
+           hide('sending-animation');
+           show('sent-msg');
+           setTimeout(()=>hide('sent-msg'),3000);
         })
         .catch((error) => {
             console.error('Error:', error);
